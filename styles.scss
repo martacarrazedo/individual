@@ -18,6 +18,8 @@ menu, nav, section {
     display: block
 }
 
+@import "main.scss";
+
 html {
     font-size: 100%;
     -webkit-text-size-adjust: 100%;
@@ -25,7 +27,7 @@ html {
 }
 
 body {
-    background: #f6f6f6
+    background: $fundo;
 }
 
 .logo img {
@@ -34,12 +36,14 @@ body {
     -o-transition: all 5s ease 0s;
     -ms-transition: all 5s ease 0s;
     transition: all 5s ease 0s;
+
     display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: -8em;
     height: 1000px;
-    width: 1000px
+    width: 1000px;
+    z-index: -1;
 }
 
 .logo img:hover {
@@ -55,7 +59,7 @@ header {
     height: 100%;
     list-style: none;
     position: relative;
-    z-index: 1
+    z-index: 1;
 }
 
 h1 {
@@ -64,9 +68,9 @@ h1 {
     text-align: center;
     font-family: "Montserrat", sans-serif;
     letter-spacing: 12pt;
-    color: #46344e;
+    color: $titulo;
     margin-top: -17em;
-    z-index: 1
+    z-index: 1;
 }
 
 h2 {
@@ -77,21 +81,21 @@ h2 {
     line-height: 1.5em;
     text-align: center;
     margin-top: 2em;
-    padding-bottom: 7%
+    padding-bottom: 7%;
 }
 
 a {
-    text-decoration: none
+    text-decoration: none;
 }
 
 .sidelogo {
     display: inline-block;
     margin-left: 35em;
-    margin-top: 15px
+    margin-top: 15px;
 }
 
 .sidelogo img {
-    height: 60px
+    height: 60px;
 }
 
 h3 {
@@ -104,7 +108,7 @@ h3 {
     text-align: center;
     margin-top: -47px;
     margin-left: -10px;
-    padding-bottom: 7%
+    padding-bottom: 7%;
 }
 
 .sidenav {
@@ -117,7 +121,7 @@ h3 {
     background-color: #111;
     overflow-x: hidden;
     transition: 0.5s;
-    padding-top: 60px
+    padding-top: 60px;
 }
 
 .sidenav a {
@@ -126,11 +130,11 @@ h3 {
     font-size: 25px;
     color: #818181;
     display: block;
-    transition: 0.3s
+    transition: 0.3s;
 }
 
 .sidenav a:hover, .offcanvas a:focus {
-    color: #f1f1f1
+    color: #f1f1f1;
 }
 
 .sidenav .closebtn {
@@ -138,16 +142,16 @@ h3 {
     top: 0;
     right: 25px;
     font-size: 36px;
-    margin-left: 50px
+    margin-left: 50px;
 }
 
 @media screen and (max-height: 450px) {
     .sidenav {
-        padding-top: 15px
+        padding-top: 15px;
     }
 
     .sidenav a {
-        font-size: 18px
+        font-size: 18px;
     }
 }
 
@@ -160,51 +164,51 @@ nav {
     text-align: center;
     z-index: 1;
     margin-bottom: 40em;
-    background-color: #874a71
+    background-color: #874a71;
 }
 
 ul {
-    list-style: none
+    list-style: none;
 }
 
 nav ul {
-    margin-top: 90px
+    margin-top: 90px;
 }
 
 nav li {
-    display: inline
+    display: inline;
 }
 
 nav a {
     color: #46344e;
     text-decoration: none;
-    margin-right: 10px
+    margin-right: 10px;
 }
 
 section {
     background-color: #FFF;
-    text-align: center
+    text-align: center;
 }
 
 #flip {
-    display: inline
+    display: inline;
 }
 
 #pannel {
     padding: -20px;
     margin-left: 20em;
     margin-right: 20em;
-    text-align: left
+    text-align: left;
 }
 
 #panel {
     padding: 20px;
-    display: none
+    display: none;
 }
 
 .indice {
     padding-bottom: 13em;
-    text-align: center
+    text-align: center;
 }
 
 .indice li {
@@ -215,14 +219,14 @@ section {
     height: 20vw;
     background-size: cover;
     float: inherit;
-    list-style: none
+    list-style: none;
 }
 
 .indice li .margin {
     top: 0px;
     bottom: 10px;
     left: 10px;
-    right: 10px
+    right: 10px;
 }
 
 .indice span {
@@ -230,47 +234,47 @@ section {
     top: 90%;
     color: #FFF;
     background-color: rgba(113, 177, 182, 0.7);
-    padding: 4px
+    padding: 4px;
 }
 
 .indice li:nth-child(1) {
-    background-color: #735068
+    background-color: #735068;
 }
 
 .indice li:nth-child(2) {
-    background-color: #735068
+    background-color: #735068;
 }
 
 .indice li:nth-child(3) {
-    background-color: #735068
+    background-color: #735068;
 }
 
 .indice li:nth-child(4) {
-    background-color: #735068
+    background-color: #735068;
 }
 
 .indice li:nth-child(5) {
-    background-color: #735068
+    background-color: #735068;
 }
 
 .indice li:nth-child(6) {
-    background-color: #735068
+    background-color: #735068;
 }
 
 .indice li:nth-child(7) {
-    background-color: #735068
+    background-color: #735068;
 }
 
 .indice li:nth-child(8) {
-    background-color: #735068
+    background-color: #735068;
 }
 
 .indice li:nth-child(9) {
-    background-color: #735068
+    background-color: #735068;
 }
 
 .indice li:nth-child(10) {
-    background-color: #735068
+    background-color: #735068;
 }
 
 .contact {
@@ -279,28 +283,28 @@ section {
     background-position: right;
     background-repeat: no-repeat;
     background-color: #71B1B6;
-    margin-top: -10.3em
+    margin-top: -10.3em;
 }
 
 .icons {
     margin-top: -5em;
-    padding-bottom: 4em
+    padding-bottom: 4em;
 }
 
 .icons ul {
     text-align: center;
     font-size: 0;
-    padding: 0
+    padding: 0;
 }
 
 .icons li {
-    display: inline-block
+    display: inline-block;
 }
 
 footer {
     font-size: 8pt;
     background-color: grey;
-    padding: 4px
+    padding: 4px;
 }
 
 span {
@@ -309,11 +313,11 @@ span {
     top: 90%;
     color: #FFF;
     background-color: rgba(113, 177, 182, 0.7);
-    padding: 5px
+    padding: 5px;
 }
 
 h2 {
     font-size: 15px;
     margin-left: 2px;
-    margin-right: 2px
+    margin-right: 2px;
 }
