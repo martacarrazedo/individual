@@ -1,100 +1,175 @@
+<!DOCTYPE html>
 <!--Marta Carrazedo-->
+<!--parte1-->
 <html lang="en">
 <head>
-
  <title>Marta Carrazedo</title>
  <meta charset="utf-8"/>
- <meta name="apple-mobile-web-app-capable" content="yes">
- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
- <link rel="stylesheet" type="text/css" href="styles.css" />
-<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
-<script src="sass/jquery-3.1.1.js"></script>
-
-
+ <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+ <link rel="stylesheet" type="text/css" href="css/styles.css" />
+ <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
 </head>
 
-<header>
-<div class="sidelogo">
- <img src="sass/imagens/logo.png">
+<body>
+
+
+
+  <ul class="navbar">
+
+  <div class="logo2">
+    <img src="sass/imagens/logo2.png" alt="logo2"
+  height="50px">
+  </div>
+
+  <h3><a href="index2.html">MARTA CARRAZEDO</a></h3>
+
+
+  		<a href="#">
+        <div class="menu">
+          <div class="container" onclick="myFunction(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </div>
+        </div>
+      </a>
+
+  </ul>
+
+
+  <div class="menu-overlay" style="display: none;">
+
+  	<nav id="c-menu--slide-left" class="c-menu c-menu--slide-left">
+        <ul class="c-menu__items">
+    			<li class="c-menu__item"><a href="index2.html" class="c-menu__link">Home</a></li>
+    			<li class="c-menu__item"><a href="index3.html" class="c-menu__link">About me</a></li>
+    			<li class="c-menu__item"><a href="#" class="c-menu__link">Portfólio</a></li>
+          <li class="c-menu__item"><a href="index4.html" class="c-menu__link">Contactos</a></li>
+      	</ul>
+  	</nav>
+
 </div>
 
-<h3> MARTA CARRAZEDO</h3>
-
-
-</header>
-
-
-
-
- <div id="mySidenav" class="sidenav">
-   <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-   <a href="#">About</a>
-   <a href="#">Portfolio</a>
-   <a href="#">Contact</a>
- </div>
-
-<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
-
-
-
-
-<!-- galeria -->
-<section>
-
-<h3>  PRINT - DIGITAL - PHOTOGRAPHY - BRANDING - TYPOGRAPHY - </h3>
-
-
-<div class="indice">
-<ul>
-
-<a id="memphis"><a href="index_memphis.html"><li><span>"MEMPHIS CANDY" - COOKING BOOK</span></li></a></a>
-<li><span>"TU VERSUS EU"- ILLUSTRATION</span></li>
-<li><span>"O DA JOANA" - BOOKCOVER</span></li>
-<li><span>"LIMON" - CALIGRAPHY</span></li>
-<li><span>"RUÍDO" - PHOTOGRAPHY</span></li>
-<li><span>"HARRING" - PORTRAIT</span></li>
-<li><span>"COSTA NOVA" - BRANDING</span></li>
-<li><span>"MEMPHIS" - ROOM INFORMATION</span></li>
-<li><span>"MOTION GRAPHICS" - BLENDER</span></li>
-
-
-</ul>
-</div>
-</section>
-<!-- galeria fim -->
-
-<section>
-<div class="contact">
-<h4><a id="contact"> CONTACT ME </a></h4>
-<h5>GET IN TOUCH | martacarrazedo@hotmail.com</h5>
-
-
-<div class="icons">
-<ul>
-<li><a href=" https://www.behance.net/martacarrazedo"><img src="sass/imagens/behance.png" alt="behance" height="40"></a></li>
-<li><a href =" https://www.facebook.com/marta.carrazedo"><img src="sass/imagens/facebook.png" alt="facebook" height="40"></a></li>
-<li><a href=" https://pt.pinterest.com/martacarrazedo/"><img src="sass/imagens/pinterest.png" alt="pinterest" height="40"></a></li>
-<li><a href="http://martacarrazedof2.tumblr.com"><img src="sass/imagens/tumblr.png" alt="tumblr" height="40"></a></li>
-<li><a href="https://vimeo.com/user47440168"><img src="sass/imagens/vimeo.png" alt="vimeo" height="40"></a></li>
-</ul>
+<div class="topo">
+  <h4>HI!</h4>
+  <h4>DESIGN PORTOLIO - 2016</h4>
+  <img src="css/imagens/marta.png" alt="marta" height="200px;">
 </div>
 
 
+<h6>  PRINT - DIGITAL - PHOTOGRAPHY - BRANDING - TYPOGRAPHY - </h6>
+
+	<section class="flex-container">
+
+		<!--Effect: Top to Bottom -->
+		<div class="pic">
+		    <img src="css/imagens/1.jpg" class="pic-image" alt="Pic"/>
+		    <span class="pic-caption top-to-bottom">
+		        <h5 class="pic-title"> - TRÊS FICÇÕES -</h5>
+		        <p>Book design from a the book "Ficções"- Jorge Luis Borgues, using only tree chapters.</p>
+		    </span>
+		</div>
+
+    <div class="pic">
+        <img src="css/imagens/2.jpg" class="pic-image" alt="Pic"/>
+        <span class="pic-caption top-to-bottom">
+            <h5 class="pic-title">- SAINTS ILLUSTRATION -</h5>
+            <p>Portuguese saints illustrated in watercolor.</p>
+        </span>
+    </div>
+
+    <div class="pic">
+        <img src="css/imagens/3.jpg" class="pic-image" alt="Pic"/>
+        <span class="pic-caption top-to-bottom">
+            <h5 class="pic-title">- O DA JOANA - </h5>
+            <p>Book cover redesign "O da Joana", for a Portugusese author that is emerging Valério Romão, and edited by Abysmo .</p>
+        </span>
+    </div>
+
+    <div class="pic">
+        <img src="css/imagens/4.jpg" class="pic-image" alt="Pic"/>
+        <span class="pic-caption top-to-bottom">
+            <h5 class="pic-title">- KEITH HARING PORTRAIT - </h5>
+            <p>Portrait inspired in Keith Haring's style.</p>
+        </span>
+    </div>
+
+    <div class="pic">
+        <img src="css/imagens/5.jpg" class="pic-image" alt="Pic"/>
+        <span class="pic-caption top-to-bottom">
+            <h5 class="pic-title">SUMMER TOUR POSTER</h5>
+            <p>Summer tour poster for the lazy faithful band.</p>
+        </span>
+    </div>
+
+    <div class="pic">
+        <img src="css/imagens/6.jpg" class="pic-image" alt="Pic"/>
+        <span class="pic-caption top-to-bottom">
+            <h5 class="pic-title">- LIMON CALLYGRAPHY - </h5>
+            <p>Callygraphy created for a limoncello bottle.</p>
+        </span>
+    </div>
+
+    <div class="pic">
+        <img src="css/imagens/7.jpg" class="pic-image" alt="Pic"/>
+        <span class="pic-caption top-to-bottom">
+            <h5 class="pic-title">NOCTURNE OP.9 Nº1</h5>
+            <p>Method to create written music with nothing more that colors in infographics, starting by choosing a song and my favorite author, the nocturne Op.9 nº 1 by Frederic Chopin.</p>
+        </span>
+    </div>
+
+    <div class="pic">
+        <img src="css/imagens/8.jpg" class="pic-image" alt="Pic"/>
+        <span class="pic-caption top-to-bottom">
+            <h5 class="pic-title">- MEMPHIS -</h5>
+            <p>A paper inspired in the Memphis style, telling about de the history behinde it.</p>
+        </span>
+    </div>
+
+    <div class="pic">
+        <img src="css/imagens/9.jpg" class="pic-image" alt="Pic"/>
+        <span class="pic-caption top-to-bottom">
+            <h5 class="pic-title">- TEATRO SÁ DA BANDEIRA -</h5>
+            <p>Rebrand of Teatro Sá da Bandeira identity.</p>
+        </span>
+    </div>
+
+    <div class="pic">
+        <img src="css/imagens/10.jpg" class="pic-image" alt="Pic"/>
+        <span class="pic-caption top-to-bottom">
+            <h5 class="pic-title">- RUÍDO -</h5>
+            <p> In the first onde I decided to photograph with my anagogic camera in black in white, in search of visual or metaphorical noise, understood by highlights, sentences or even watermarks.</p>
+        </span>
+    </div>
+
+    <div class="pic">
+        <img src="css/imagens/11.jpg" class="pic-image" alt="Pic"/>
+        <span class="pic-caption top-to-bottom">
+            <h5 class="pic-title">- MEMPHIS COOK BOOK -</h5>
+            <p>Hi, this is a simple example =D</p>
+        </span>
+    </div>
+
+    <div class="pic">
+        <img src="css/imagens/12.jpg" class="pic-image" alt="Pic"/>
+        <span class="pic-caption top-to-bottom">
+            <h5 class="pic-title">- MEDIA ECOLOGY -</h5>
+            <p>Hi, this is a simple example =D</p>
+        </span>
+    </div>
 
 
+	</section>
 
 
-
-</section>
 
 <footer>
-<h6>© 2016 Marta Carrazedo. All rights reserved. | martacarrazedo@hotmail.com | Porto, Vila Nova de Gaia</h6>
+<h7>© 2016 Marta Carrazedo. All rights reserved. | martacarrazedo@hotmail.com | Porto, Vila Nova de Gaia</h7>
 </footer>
 
 
-
-</div>
-
-<script src="script.js"></script>
+</body>
+<script src="sass/jquery-3.1.1.js"></script>
+<script src="sass/script.js"></script>
 </body>
 </html>
