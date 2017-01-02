@@ -9,7 +9,7 @@ body {
     background: $fundo;
 }
 
-//primeira pagina--------------------------
+
 .logo img{
     transition: all 5s ease 0s;
     display: block;
@@ -87,10 +87,6 @@ a:hover {
 a:visited{
   text-decoration: none;
 }
-
-//------------------------------------------------
-
-//homepage index2---------------------------------
 
 h3 {
     color: white;
@@ -211,7 +207,7 @@ h3 {
 	position: fixed;
 	top: 0;
 	width: 100%;
-  z-index: 1;
+  z-index: 3;
 
 }
 
@@ -236,24 +232,12 @@ h3 {
   padding: 24px 24px;
   color: #fff;
   font-family: "Montserrat",sans-serif;
-  font-size: 20px;
+  font-size: 17px;
+  letter-spacing: 3px;
   text-transform: uppercase;
   z-index: 100;
 }
 
-
-
-h4{
-  color: white;
-  font-family: 'Montserrat', arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: 9px;
-  font-size:17px;
-  line-height: 1.5em;
-  text-align: center;
-  text-transform: uppercase;
-  padding: 100px;
-}
 
 .topo{
     background-color: $rosa;
@@ -261,31 +245,32 @@ h4{
 
 
 
-h6{
-
-  font-family: 'Montserrat', arial, sans-serif;
-  font-weight: 400;
-  letter-spacing: 9px;
-  font-size:17px;
-  line-height: 1.5em;
-  text-align: center;
-  text-transform: uppercase;
+h4{
+color:$roxo;
+text-transform: uppercase;
+font-family: 'Montserrat',sans-serif;
+letter-spacing: 5px;
+font-size: 50px;
+line-height: 1.8em;
+font-weight: 700;
+text-align:left;
+padding-top: 2.5em;
+padding-left: 1.5em;
 }
 
 
 
 h6{
-  color: $roxo;
+  color: $rosa;
   font-family: 'Montserrat', arial, sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 9px;
-  font-size:17px;
-  line-height: 1.5em;
-  text-align: center;
+  font-size:14px;
+  line-height: 3em;
+  text-align: left;
   text-transform: uppercase;
-}
 
-//galeria-------------
+}
 
 p{
   line-height:2em;
@@ -317,16 +302,17 @@ img{
     overflow:hidden;
     margin-bottom: 33px;
 
-  /*  -webkit-animation:anima 5s;
+    -webkit-animation:anima 5s;
     -moz-animation:anima 5s;
     -o-animation:anima 5s;
     -ms-animation:anima 5s;
     animation:anima 5s;
+
     -webkit-backface-visibility:hidden;
     -moz-backface-visibility:hidden;
     -o-backface-visibility:hidden;
     -ms-backface-visibility:hidden;
-    backface-visibility:hidden;*/
+    backface-visibility:hidden;
   }
 
 
@@ -337,14 +323,14 @@ img{
   height:100%;
   background:rgba(71, 44, 80, 0.67);
 
- text-align:center;
   -moz-opacity:0;
   -khtml-opacity:0;
   opacity:0;
   font-family: 'Montserrat',sans-serif;
   font-weight: 400;
   color: white;
-      }
+  text-align:center;
+}
 
 .pic-title{
   padding-top: 6em;
@@ -415,36 +401,123 @@ img{
       -ms-tap-highlight-color:transparent;
       tap-highlight-color:transparent;}
 
-//------------------------------------------------
 
-//footer-----------
+strong{
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 12px;
+  line-height: 1.5em;
+}
 
-footer{
-  font-size: 8pt;
-  background-color:grey;
-  padding: 4px;
+.marta{
+  display: flex;
+  margin-bottom: 10em;
+  padding-left: 15em;
+  padding-top: 1em;
+  z-index:1;
+  position: relative;
+ }
+
+
+.about{
+ background-image: url(imagens/logoclaro.png);
+ background-repeat: no-repeat;
+ background-size: cover;
+
+}
+
+.marta img {
+    -moz-animation-duration: 3s;
+    -webkit-animation-duration: 3s;
+    -moz-animation-name: slidein;
+    -webkit-animation-name: slidein;
+    }
+@-moz-keyframes slidein {
+  from {
+        margin-left:-50%;
+        }
+
+      to {
+         margin-left:0%;
+        }
+       }
+
+ @-webkit-keyframes slidein {
+   from {
+        margin-left:-50%;
+        }
+
+            to {
+               margin-left:0%;
+            }
+         }
+
+
+.texto{
+  font-family: 'Montserrat',sans-serif;
+  font-size: 12px;
+  margin-top: -50em;
+  margin-right: 26em;
+  margin-left: 39em;
+  padding: 60px;
+  text-align: left;
+  border-style:solid;
+  border-width: 6px;
+  border-color: $rosa;
+  z-index: 100;
 }
 
 
-//contactos-------
 
-.fundo-contactos{
-  background-color: $azul;
+//contactos-----------
+.contactos{
+  background-image: url(imagens/logoclaroo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
+
 .flex-container-cont{
-    max-width:300px;
-    margin:20px;
-    display: -webkit-flex;
+    max-width:400px;
+    margin-top:20em;
     display: flex;
-    flex-wrap: nowrap;
-    justify-content:space-around;
-    align-items:center;
-    z-index: -100;
-
+    justify-content:center;
   }
 
 
-// RESPONSIVIDADE
+  .flex-item{
+        padding: 15px;
+        transition: all .45s ease-in-out;
+  }
+
+
+.flex-item:hover {
+
+  transform: scale(1.15); }
+
+
+.border{
+  border-style: solid;
+  border-width: 5px;
+  border-color: $rosa;
+  padding: 30px;
+  margin-left: 10em;
+  margin-right:10em;
+}
+
+footer{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 7pt;
+  background-color:$roxo;
+  padding: 4px;
+  color: white;
+  font-weight: 200;
+  letter-spacing: 2px;
+  margin-top: 12.3em;
+}
+
+
+
+
 @media screen and (max-width: 560px){
 
   .pic{
