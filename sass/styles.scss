@@ -93,12 +93,12 @@ h3 {
     font-family: 'Montserrat', arial, sans-serif;
     font-weight: 400;
     letter-spacing: 9px;
-    font-size:17px;
+    font-size:15px;
     line-height: 1.5em;
     text-align: center;
     text-transform: uppercase;
-    padding-top: 1em;
-    padding-left: -10em;
+    padding-top: 1.3em;
+
   }
 
 
@@ -138,6 +138,7 @@ h3 {
 .logo2 img:hover {
     transform: rotate(150deg);
 }
+
 
 
 .container {
@@ -240,9 +241,40 @@ h3 {
 
 
 .topo{
-    background-color: $rosa;
+    background-image:url(imagens/fundo1.png);
+    background-size: cover;
+    padding-top: 20em;
+    padding-bottom: 22em;
 }
 
+.contentDiv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content:space-around;
+  align-items:center;
+  margin-top:-5em;
+}
+
+@keyframes bouncing {
+    0% {bottom: 0;}
+    50% {bottom: 20px;}
+    100% {bottom: 0;}
+}
+
+.arrow {
+    animation: bouncing 1s infinite ease-in-out;
+    bottom: 0;
+    position: relative;
+    height: 30px;
+}
+
+.inicio {
+    height: 100%;
+}
+
+section {
+    min-height: 100%;
+}
 
 
 h4{
@@ -250,33 +282,57 @@ color:$roxo;
 text-transform: uppercase;
 font-family: 'Montserrat',sans-serif;
 letter-spacing: 5px;
-font-size: 50px;
+font-size: 40px;
 line-height: 1.8em;
 font-weight: 700;
-text-align:left;
-padding-top: 2.5em;
-padding-left: 1.5em;
+text-align:center;
+}
+
+.marginh4{
+  padding-top: 3em;
+  padding-bottom: 1.5em;
+  padding-left: 6em;
+  text-align: left;
+
+}
+
+.marginh4_1{
+  margin-top: 3em;
+  text-align: center;
 }
 
 
+h5{
+  letter-spacing: 2px;
+}
 
 h6{
-  color: $rosa;
+  color: $roxo;
   font-family: 'Montserrat', arial, sans-serif;
   font-weight: 700;
   letter-spacing: 9px;
-  font-size:14px;
+  font-size:17px;
   line-height: 3em;
-  text-align: left;
+  text-align: center;
   text-transform: uppercase;
+}
 
+.marginh6{
+margin-top: 2em;
+margin-bottom: 4em;
+font-size: 18px;
+}
+
+h6 a:hover{
+  text-decoration: none;
+  color:$roxo;
 }
 
 p{
   line-height:2em;
   padding-left: 30px;
   padding-right: 30px;
-  font-size: 12px;
+  font-size: 11px;
   letter-spacing: 1px;
 }
 
@@ -287,6 +343,7 @@ img{
 .flex-container{
     max-width:2000px;
     margin:20px;
+    margin-bottom: 40px;
     display: -webkit-flex;
     display: flex;
     flex-wrap: wrap;
@@ -294,6 +351,7 @@ img{
     align-items:center;
     z-index: -100;
   }
+
 
 .pic{
     max-width:430px;
@@ -321,7 +379,7 @@ img{
   position:absolute;
   width:100%;
   height:100%;
-  background:rgba(71, 44, 80, 0.67);
+  background:$verdeclaro;
 
   -moz-opacity:0;
   -khtml-opacity:0;
@@ -333,7 +391,8 @@ img{
 }
 
 .pic-title{
-  padding-top: 6em;
+  padding-top: 8em;
+  padding-bottom: 1em;
         }
 
 .pic:hover .bottom-to-top{
@@ -411,19 +470,21 @@ strong{
 
 .marta{
   display: flex;
-  margin-bottom: 10em;
   padding-left: 15em;
   padding-top: 1em;
+  float: left;
   z-index:1;
-  position: relative;
+
  }
 
 
 .about{
- background-image: url(imagens/logoclaro.png);
- background-repeat: no-repeat;
- background-size: cover;
-
+   background: url(imagens/fundo2.png) no-repeat center center fixed;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: 800px;
 }
 
 .marta img {
@@ -434,7 +495,7 @@ strong{
     }
 @-moz-keyframes slidein {
   from {
-        margin-left:-50%;
+        margin-left:-100%;
         }
 
       to {
@@ -444,7 +505,7 @@ strong{
 
  @-webkit-keyframes slidein {
    from {
-        margin-left:-50%;
+        margin-left:-100%;
         }
 
             to {
@@ -456,14 +517,13 @@ strong{
 .texto{
   font-family: 'Montserrat',sans-serif;
   font-size: 12px;
-  margin-top: -50em;
   margin-right: 26em;
   margin-left: 39em;
   padding: 60px;
   text-align: left;
   border-style:solid;
   border-width: 6px;
-  border-color: $rosa;
+  border-color: $roxo;
   z-index: 100;
 }
 
@@ -471,37 +531,41 @@ strong{
 
 //contactos-----------
 .contactos{
-  background-image: url(imagens/logoclaroo.png);
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: url(imagens/fundo3.png)no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 800px;
 }
 
 .flex-container-cont{
     max-width:400px;
-    margin-top:20em;
+    margin-left: 15em;
+    margin-top: 2em;
     display: flex;
     justify-content:center;
   }
 
-
   .flex-item{
-        padding: 15px;
-        transition: all .45s ease-in-out;
+  padding: 15px;
+  transition: all .45s ease-in-out;
   }
 
 
 .flex-item:hover {
-
-  transform: scale(1.15); }
+  transform: scale(1.15);
+}
 
 
 .border{
   border-style: solid;
   border-width: 5px;
-  border-color: $rosa;
+  border-color: $roxo;
   padding: 30px;
-  margin-left: 10em;
-  margin-right:10em;
+  margin-left: 15em;
+  margin-right:15em;
+
 }
 
 footer{
@@ -512,7 +576,12 @@ footer{
   color: white;
   font-weight: 200;
   letter-spacing: 2px;
-  margin-top: 12.3em;
+  text-align: center;
+
+  position:fixed;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 
@@ -529,7 +598,8 @@ footer{
     -o-animation:none;
     -ms-animation:none;
     animation:none;
-    margin:10px auto;}
+    margin:10px auto;
+  }
 
   }
 
